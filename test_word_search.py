@@ -7,9 +7,11 @@ board = [["A", "B", "C", "E"],
 word = "ABCCED"
 
 class TestSolution(unittest.TestCase):
-    def test_exist(self):
-        self.assertEqual((self.exist_word(board, word)), True)
+      def test_exist(self):
+          x = Solution()
+          res = x.exist_word(board, word)
+          self.assertEqual(res, True)
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()
